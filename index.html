@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Typing Test</h1>
+      <h2>Type the following paragraph to know your typing speed</h2>
+      
+      <p id="text-to-type">
+        The quick brown fox jumps over the lazy dog, a classic phrase used to showcase every letter of the alphabet. Success in typing is not just about raw speed; it requires a steady rhythm and a keen eye for detail. As your fingers glide across the home row, focus on maintaining a light touch and minimizing errors. With consistent practice, you will find that your words-per-minute count begins to climb steadily. Remember, accuracy is the foundation upon which true speed is built. Keep your back straight, your wrists leveled, and let the mechanical clicks of the keys guide your progress toward becoming a master typist.
+      </p>
+
+      <textarea id="user-input" placeholder="Start typing..."></textarea>
+
+      <div id="result">
+        <h2>Your Results:</h2>
+        <p id="accuracy">Accuracy: 0%</p>
+        <p id="wpm">Words Per Minute: 0</p>
+        <p>Thank you for visiting my website</p>
+        <p>- v vineeth</p>
+      </div>
+
+      <div id="review-section">
+        <hr>
+        <h3>Leave a Review</h3>
+        <form id="review-form">
+          <input type="text" id="reviewer-name" placeholder="Your Name" required>
+          <textarea id="review-text" placeholder="What did you think of the test?" required></textarea>
+          <button type="submit" id="submit-review">Post Review</button>
+        </form>
+
+        <div id="reviews-display">
+          <h4>Recent Reviews</h4>
+          <ul id="reviews-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
